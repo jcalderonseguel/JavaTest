@@ -1,7 +1,10 @@
 package com.javaTest;
 
+import java.io.*;
+import java.util.*;
+
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("hello test");
+    public static void main(String[] args) throws IOException {
+        Helper.getFile();
     }
 }
