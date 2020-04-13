@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hi dude!!");
         ArrayList<String> result = new ArrayList<>();
         ArrayList<String> sorted = new ArrayList<>();
         String[] split;
         String noVowels;
+        System.out.println("Hi Dude!! i'm going to erase vowels from this strings' file.");
 
         result = Helper.readFileTxt();
 

@@ -13,6 +13,8 @@ public class Helper {
             while (reader.ready()) {
                 result.add(reader.readLine());
             }
+            System.out.println("Content file => "+result.get(0));
+
         }catch( IOException e){
             e.printStackTrace();
         }
@@ -34,13 +36,11 @@ public class Helper {
     public  static void writeFileTxt (ArrayList<String> list) {
         try{
             FileWriter writer = new FileWriter("DiegoCalzadilla.txt");
-            StringBuilder sb = new StringBuilder();
             for (String s : list) {
-                sb.append(s);
+                writer.write(s);
             }
-            writer.write(sb.toString());
             writer.close();
-            System.out.println("Successfully wrote to the file.");
+            System.out.println("Successfully wrote to the file check out created file with your name in your directory.");
         }catch (IOException e){
             System.out.println("An error occurred.");
             e.printStackTrace();
