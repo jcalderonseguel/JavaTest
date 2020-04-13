@@ -1,17 +1,24 @@
 package com.javaTest;
-
-import java.io.FileReader;
-import java.io.Reader;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Helper {
 
-   /* public static Reader abrirArchiv(String archivo) {
-        Reader reader = new FileReader("c:\\data\\myfile.txt");
+    public static void abrirArchivo(String archivo) {
+        try {
+            Reader reader = new FileReader(archivo);
 
-        int data = reader.read();
-        while(data != -1){
-            char dataChar = (char) data;
-            data = reader.read();
+            int data = reader.read();
+            while(data != -1){
+                char dataChar = (char) data;
+                data = reader.read();
+            }
+
+        }catch (IOException e)
+        {
+            System.out.println(e.getClass(). getSimpleName() + " - " + e.getMessage());
         }
-    }*/
+
+    }
 }
