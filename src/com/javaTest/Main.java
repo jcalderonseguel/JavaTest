@@ -19,6 +19,7 @@ public class Main {
             while((length = reader.read(buff)) >= 0) {
                 for(int i=0; i < length; i++) {
                     pivotArray.add(buff[i]) ;
+                    System.out.println(buff[i]);
                 }
 
             }
